@@ -1,0 +1,22 @@
+.navbar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  background-color: red;
+  justify-content: space-between;
+
+  h3 {
+    margin: 0;
+  }
+
+  .begin {
+    display: flex;
+    align-items: center;
+  }
+
+  .end {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "renaissance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "build": "node-sass --include-path scss renaissance.scss dist/renaissance.css --output-style compressed",
+   "dev": "nodemon -e scss -x \"npm run build\""
+  },
+  "author": "Creators Never Die",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.12.5"
+  }
+}
