@@ -1,22 +1,92 @@
-.navbar {
-  padding-left: 1rem;
-  padding-right: 1rem;
+nav {
   margin-bottom: 2rem;
-  display: flex;
-  background-color: red;
-  justify-content: space-between;
 
-  h3 {
-    margin: 0;
+  a {
+    color: $black;
+    text-decoration: none;
   }
 
-  .begin {
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
-    align-items: center;
+    background-color: red;
+    justify-content: space-between;
+  
+    h3 {
+      margin: 0;
+    }
+  
+  
+    .brand {
+      display: flex;
+      align-items: center;
+    }
+  
+    .nav {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      margin-left: 4rem;
+  
+      @include breakpoint(xs) {
+        display: none;
+      }
+    }
+  
+    .hamburger {
+      display: none;
+      align-items: center;
+  
+      @include breakpoint(xs) {
+        display: flex;
+      }
+  
+      .line {
+        width: 25px;
+        height: 2px;
+        background-color: #ecf0f1;
+        display: block;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  
+    .hamburger.is-active {
+  
+      .line:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        -ms-transform: translateY(8px) rotate(45deg);
+        -o-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+      }
+      .line:nth-child(2) {
+        opacity: 0;
+      }
+  
+      .line:nth-child(3) {
+        -webkit-transform: translateY(-6px) rotate(-45deg);
+        -ms-transform: translateY(-6px) rotate(-45deg);
+        -o-transform: translateY(-6px) rotate(-45deg);
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    }
+    
+    
   }
 
-  .end {
-    display: flex;
-    align-items: center;
+  .hamburger-dropdown {
+    // display: none;
+    background-color: darkred;
+    text-align: center;
+    padding: 3rem;
+
+    .item {
+      margin-bottom: 3rem;
+    }
+
   }
+
 }
