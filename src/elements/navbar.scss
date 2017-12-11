@@ -6,6 +6,10 @@ nav {
     text-decoration: none;
   }
 
+  .is-active {
+    display: block !important;
+  }
+
   .navbar {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -28,6 +32,29 @@ nav {
       align-items: center;
       flex: 1;
       margin-left: 4rem;
+      margin-top: 5px;
+
+      .item {
+        margin-right: 2rem;
+      }
+
+      .dropdown {
+
+        .menu {
+          display: none;
+          position: absolute;
+          background-color: white;
+          padding: 1rem;
+          border-radius: 5px;
+          margin-top: 1rem;
+          margin-left: 1rem;
+          -webkit-box-shadow: 24px 10px 61px 8px rgba(0,0,0,0.14);
+          -moz-box-shadow: 24px 10px 61px 8px rgba(0,0,0,0.14);
+          box-shadow: 24px 10px 61px 8px rgba(0,0,0,0.14);
+          z-index: 10;
+        }
+
+      }
   
       @include breakpoint(xs) {
         display: none;
@@ -35,8 +62,8 @@ nav {
     }
   
     .hamburger {
-      display: none;
       align-items: center;
+      padding-top: 7px;
   
       @include breakpoint(xs) {
         display: flex;
@@ -78,14 +105,16 @@ nav {
   }
 
   .hamburger-dropdown {
-    // display: none;
+    display: none;
     background-color: darkred;
     text-align: center;
-    padding: 3rem;
+    padding: 1rem;
 
     .item {
       margin-bottom: 3rem;
+      margin-top: 3rem;
     }
+    
 
   }
 
