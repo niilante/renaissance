@@ -10,47 +10,34 @@ body {
 h1 {
   font-size: 4.25em;
   line-height: 1.01470588em;
-  margin-top: 0.33823529em;
-  margin-bottom: 0.67647058em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
 }
 h2 {
   font-size: 2.625em;
   line-height: 1.0952381em;
-  margin-top: 0.54761905em;
-  margin-bottom: 0.54761905em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
 }
 h3 {
   font-size: 1.625em;
   line-height: 1.76923077em;
-  margin-top: 0.88461538em;
-  margin-bottom: 0em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 h4 {
   font-size: 1em;
   line-height: 1.4375em;
-  margin-top: 1.4375em;
-  margin-bottom: 0em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-h5 {
-  font-size: 1em;
-  line-height: 1.4375em;
-  margin-top: 1.4375em;
-  margin-bottom: 0em;
-}
-p, ul, ol, pre, table, blockquote {
-  margin-top: 0em;
-  margin-bottom: 1.4375em;
-}
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0em;
-  margin-bottom: 0em;
+p {
+  font-size: 16px;
+  line-height: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-/* Let's make sure all's aligned */
-hr {
-  border: 1px solid;
-  margin: -1px 0;
-}
-a, b, i, strong, em, small, code {
-  line-height: 0;
-}
+

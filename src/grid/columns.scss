@@ -3,6 +3,8 @@
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   @include breakpoint(xs) {
     display: block;
