@@ -1,0 +1,37 @@
+.tabs {
+  width: 100%;
+
+  li {
+    float:left;
+    width:20%;
+  }
+  a {
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:black;
+    padding:20px 0;
+    border-bottom:2px solid #888;
+    background:red;
+    
+    &:hover, &.active {
+      background:darkred;
+    }
+  }
+}
+
+.tabgroup {
+
+  @include breakpoint(xs) {
+    padding-top: 3rem;
+  }
+  div {
+    padding:30px;
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
+    display: none;
+  }
+  div:first-of-type {
+    display: block;
+  }
+}

@@ -1,0 +1,50 @@
+/* PROGRESS */
+
+/* COLORS */
+
+$color: #6c6c6c;
+$color-bg: #f5f7f9;
+$color-progress-bg: #e5e9eb;
+
+$color-green: #4cd964;
+$color-turquoise: #5ac8fa;
+$color-blue: #007aff;
+$color-light-blue: #34aadc;
+$color-purple: #5856d6;
+$color-red: #ff2d55;
+
+.progress {
+  background-color: $color-progress-bg;
+  height: 1.25em;
+  position: relative;
+  width: 24em;
+
+  &-bar {
+    // animation-duration: 3s;
+    // animation-name: width;
+    width: 50%;
+    background-image: linear-gradient(to right, $color-green, $color-turquoise, $color-blue, $color-light-blue, $color-purple, $color-red);
+    background-size: 24em .25em;
+    height: 100%;
+    position: relative;
+  }
+
+}
+
+/* ANIMATIONS */
+
+@keyframes width {
+
+  0%, 100% {
+    transition-timing-function: cubic-bezier(1, 0, .65, .85);
+  }
+
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+
+}
