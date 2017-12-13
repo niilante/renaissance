@@ -90,11 +90,11 @@ The navbar is maintained within the HTML `nav` component. When your site is acce
 ```
 <div class="item dropdown">
 
-<a href="#">Dropdown</a>
+    <a href="#">Dropdown</a>
 
-<ul class="menu">
-    <li><a href="#">Menu-1</a></li>
-</ul>
+    <ul class="menu">
+        <li><a href="#">Menu-1</a></li>
+    </ul>
 
 </div>
 ```
