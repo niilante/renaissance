@@ -19,14 +19,14 @@ or using NPM:
 Renaissance uses flexbox for it's grid system. Following tradional syntax, there are containers, rows and columns.
 
 Columns must be placed inside a row:
-```
+```html
 <div class="row">
     <div class="column">
     </div>
 </div>
 ```
 All columns break into their own block when on mobile, regardless of stated column size:
-```
+```html
 <div class="column column-1"></div>
 <div class="column column-2"></div>
 <div class="column column-3"></div>
@@ -44,7 +44,7 @@ All columns break into their own block when on mobile, regardless of stated colu
 
 The navbar is maintained within the HTML `nav` component. When your site is accessed from mobile, the main items will be hidden and replaced with a hamburger menu. 
 
-```
+```html
 <nav>
     <div class="navbar">
         <div class="brand">
@@ -87,7 +87,7 @@ The navbar is maintained within the HTML `nav` component. When your site is acce
 ```
 
 ## Dropdown
-```
+```html
 <div class="item dropdown">
 
     <a href="#">Dropdown</a>
@@ -101,7 +101,7 @@ The navbar is maintained within the HTML `nav` component. When your site is acce
 ## Hamburger
 
 When your site will be accessed on mobile, the main menu will be hidden and replaced with a hamburger menu. Javascript is not included for handling the click event. If the class `is-active` is placed on `hamburger-dropdown` the menu will expand.
-```
+```html
 <div class="hamburger-dropdown">
 
     <div class="item">
@@ -115,7 +115,7 @@ When your site will be accessed on mobile, the main menu will be hidden and repl
 </div>
 ```
 # Forms
-```
+```css
 input[type="text"], textarea, select {
     width: 100%;
 }
@@ -123,7 +123,7 @@ input[type="text"], textarea, select {
 All inputs that require text have a 100% width. Create a wrapping div to set the width.
 
 # Slider
-```
+```html
 <div class="sliderContainer">
     <input class="slider" type="range" value="250" min="0" max="500" step="50">
 </div>
@@ -131,7 +131,7 @@ All inputs that require text have a 100% width. Create a wrapping div to set the
 To modify the slider handle, use a chrome or firefox prefix:
 
 ## Chrome
-```
+```css
 ::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 30px;
@@ -142,7 +142,7 @@ To modify the slider handle, use a chrome or firefox prefix:
     transition: background .15s ease-in-out;
 
     &:hover {
-    background: darkred;
+        background: darkred;
     }
  }
 
@@ -151,7 +151,7 @@ To modify the slider handle, use a chrome or firefox prefix:
 }
 ```
 ## Firefox
-```
+```css
 ::-moz-range-thumb {
     width: 30px;
     height: 30px;
@@ -160,7 +160,7 @@ To modify the slider handle, use a chrome or firefox prefix:
     background: red;
 
     &:hover {
-    background: darkred;
+        background: darkred;
     }
  }
 
@@ -173,7 +173,7 @@ To modify the slider handle, use a chrome or firefox prefix:
 Comes in 3 colors: **success** , **alert** and **reject** 
 
 _**Notice how notifications makes use of the grid. A notification is just a row with 2 columns inside_ 
-```
+```html
 <div class="notification notification--success row">
 
     <div class="iconContainer column column-1">
@@ -191,7 +191,7 @@ _**Notice how notifications makes use of the grid. A notification is just a row 
 # Progress Bar
 
 You can set the percent of the progress bar by setting the width
-```
+```html
 <div class="progress">
     <div class="progress-bar" style="width:50%"></div>
 </div>
@@ -199,13 +199,13 @@ You can set the percent of the progress bar by setting the width
 # Buttons
 
 By default, Renaissance buttons are rounded. You can remove this by setting the border-radius
-```
+```css
 button {
     border-radius: 0;
 }
 ```
 # Tabs
-```
+```html
 <ul class="tabs">
     <li><a href="#tab1" class="active">Tab 1</a></li>
     <li><a href="#tab2">Tab 2</a></li>
