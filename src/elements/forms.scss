@@ -1,3 +1,101 @@
+input[type="text"], textarea, select {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+input[type="text"]:focus, textarea:focus, select:focus {
+ outline: 0;
+ border: 1px solid #aaa;
+}
+input[type="text"]:hover, textarea:hover, select:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+select {
+  padding: 0;
+}
+
+option {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+option:checked {
+  color: white;
+  background: red -webkit-linear-gradient(bottom, red 0%, darkred 100%);
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding-left: 42px;
+  padding-right: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+label::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid red;
+  border-radius: 4px;
+  z-index: -1;
+}
+input[type="radio"] + label::before {
+  border-radius: 60%;
+}
+/* Checked */
+// input[type="checkbox"]:checked + label,
+// input[type="radio"]:checked + label {
+
+// }
+input[type="checkbox"]:checked + label::before,
+input[type="radio"]:checked + label::before {
+  top: 0;
+  background: red;
+}
+/* Transition */
+label,
+label::before {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
 .range-slider__range {
   -webkit-appearance: none;
   width: 100%;
@@ -6,6 +104,8 @@
   outline: none;
   padding: 0;
   margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   // Range Handle
   &::-webkit-slider-thumb {

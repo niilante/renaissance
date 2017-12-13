@@ -1,2 +1,2 @@
 # Renaissance
-The dopest css framework. Simple classnames. Straight to the point. No fluff.
+The freshest css framework. Simple classnames. Straight to the point. No fluff.

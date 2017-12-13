@@ -19,7 +19,7 @@
             </div>
             <div class="item dropdown">
               <a href="#">Dropdown</a>
-              <ul class="menu">
+              <ul class="menu is-active">
                 <li><a href="#">Menu-1</a></li>
               </ul>
             </div>
@@ -81,8 +81,12 @@
             <textarea rows="4" cols="50"></textarea>
         </div>
         <div class="column column-12">
-            <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
-            <input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car
+          <input type="checkbox" name="cb" id="cb1" />
+          <label for="cb1">Email</label>
+          <input type="checkbox" name="cb" id="cb2" />
+          <label for="cb2">Phone</label>
+          <input type="checkbox" name="cb" id="cb3" />
+          <label for="cb3">Mail</label>
         </div>
         <div class="column column-12">
           <input type="radio" id="contactChoice1"
@@ -108,7 +112,6 @@
         <div class="column column-12">
           <div class="range-slider">
               <input class="range-slider__range" type="range" value="250" min="0" max="500" step="50">
-              <span class="range-slider__value">0</span>
           </div>
         </div>
         
