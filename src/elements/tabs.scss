@@ -12,11 +12,12 @@
     text-transform:uppercase;
     color:black;
     padding:20px 0;
-    border-bottom:2px solid #888;
-    background:red;
+    border-bottom:2px solid #e3e3e3;
+    background:white;
     
     &:hover, &.active {
-      background:darkred;
+      background:$black;
+      color: white;
     }
   }
 }
@@ -28,7 +29,9 @@
   }
   div {
     padding:30px;
-    box-shadow:0 3px 10px rgba(0,0,0,.3);
+    -moz-box-shadow: 2px 2px 61px 8px rgba(0,0,0,0.20);
+    -webkit-box-shadow: 2px 2px 61px 8px rgba(0,0,0,0.20);
+    box-shadow: 2px 2px 61px 8px rgba(0,0,0,0.20);
     display: none;
   }
   div:first-of-type {

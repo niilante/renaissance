@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "build": "node-sass --include-path scss renaissance.scss dist/renaissance.css --output-style compressed",
+   "build": "node-sass --include-path scss renaissance.scss renaissance.css --output-style compressed",
    "dev": "nodemon -e scss -x \"npm run build\""
   },
   "author": "Creators Never Die",
