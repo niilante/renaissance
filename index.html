@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Renaissance</title>
-  <link rel="stylesheet" type="text/css" href="dist/renaissance.css">
+  <link rel="stylesheet" type="text/css" href="renaissance.css">
 </head>
 <body>
   
@@ -81,26 +81,47 @@
             <textarea rows="4" cols="50"></textarea>
         </div>
         <div class="column column-12">
-          <input type="checkbox" name="cb" id="cb1" />
-          <label for="cb1">Email</label>
-          <input type="checkbox" name="cb" id="cb2" />
-          <label for="cb2">Phone</label>
-          <input type="checkbox" name="cb" id="cb3" />
-          <label for="cb3">Mail</label>
+          <label>Email</label>
+          <input type="email" />
         </div>
+
         <div class="column column-12">
-          <input type="radio" id="contactChoice1"
-            name="contact" value="email">
-          <label for="contactChoice1">Email</label>
-      
-          <input type="radio" id="contactChoice2"
-            name="contact" value="phone">
-          <label for="contactChoice2">Phone</label>
-      
-          <input type="radio" id="contactChoice3"
-            name="contact" value="mail">
-          <label for="contactChoice3">Mail</label>
+          <div class="checkbox">
+            <input type="checkbox" name="cb" id="cb1" />
+            <label for="cb1">Email</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="cb" id="cb2" />
+            <label for="cb2">Phone</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="cb" id="cb3" />
+            <label for="cb3">Mail</label>
+          </div>
         </div>
+
+        <div class="column column-12">
+          
+          <div class="radio">
+            <input type="radio" id="contactChoice1"
+            name="contact" value="email">
+            <label for="contactChoice1">Email</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" id="contactChoice2"
+            name="contact" value="phone">
+            <label for="contactChoice2">Phone</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" id="contactChoice3"
+            name="contact" value="mail">
+            <label for="contactChoice3">Mail</label>
+          </div>
+
+        </div>
+        
         <div class="column column-12">
             <select name="cars" multiple>
                 <option value="volvo">Volvo</option>
