@@ -64,6 +64,7 @@ nav {
     .hamburger {
       align-items: center;
       padding-top: 7px;
+      display: none;
   
       @include breakpoint(xs) {
         display: flex;
