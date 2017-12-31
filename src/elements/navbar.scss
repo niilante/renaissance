@@ -105,6 +105,11 @@ nav {
     
   }
 
+  .navbar-right {
+    flex: 0;
+    justify-content: center;
+  }
+
   .hamburger-dropdown {
     display: none;
     background-color: white;
