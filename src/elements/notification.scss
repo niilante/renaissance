@@ -4,6 +4,8 @@
   color: $black;
   transition: all 0.2s ease;
   margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
   
   &--alert {
     background-color: #FFABA8;
@@ -18,27 +20,29 @@
   }
 
   .iconContainer {
-    @include breakpoint(xs) {
+    @include breakpoint(phone) {
       padding-top: 1rem;
     }
+
     .icon {
       width: 20px;
       font-size: 20px;
       margin: 0 auto;
-      margin-top: 1.2rem;
     }
   }
 
   .body {
-    padding-left: 2rem;
-
+    padding-left: 1rem;
     p {
       max-width: 90%;
+
     }
   }
 
   .closeContainer {
-    position: relative;
+
+    float: right;
+    margin-right: 2rem;
     background-color: rgba(black, 0.3);
     color: #fff;
     border: none;
@@ -46,21 +50,25 @@
     outline: none;
     font-size: 20px;
     right: 5px;
-    top: 5px;
+
     width: 20px;
     height: 20px;
     opacity: 1;
     cursor: pointer;
     display: block;
 
-    @include breakpoint(xs) {
+    @include breakpoint(phone) {
      margin-left: 93%;
      top: -100px;
     }
 
+    @include breakpoint(tablet) {
+      margin-top: 2rem;
+    }
+
     .icon {
       position: relative;
-      right: 12px;
+      right: 11px;
       bottom: 1px;
     }
 

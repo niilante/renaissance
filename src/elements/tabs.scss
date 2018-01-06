@@ -24,7 +24,7 @@
 
 .tabgroup {
 
-  @include breakpoint(xs) {
+  @include breakpoint(phone) {
     padding-top: 3rem;
   }
   div {

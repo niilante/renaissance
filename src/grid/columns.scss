@@ -7,7 +7,7 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 
-  @include breakpoint(xs) {
+  @include breakpoint(phone) {
     display: block;
   }
 }
@@ -16,19 +16,19 @@
   flex-grow: 1;
   flex-basis: 0;
   max-width: 100%;
-  margin-right: $gutter;
-
-  @include breakpoint(xs) {
+  
+  @include breakpoint(phone) {
     max-width: 100%;
     width: 100%;
   }
 }
 
+
 // Loops through all columns
 
 @for $i from 1 through 12 {
   .row > &.column-#{$i} {
-    @include breakpoint(xs) {
+    @include breakpoint(phone) {
       max-width: 100%;
     }
   }
@@ -93,4 +93,10 @@
 .column-12 {
   flex-basis: calc(100% - #{$gutter});
   max-width: 100%;
+}
+
+.center-items {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

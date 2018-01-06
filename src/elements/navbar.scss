@@ -60,7 +60,7 @@ nav {
 
       }
   
-      @include breakpoint(xs) {
+      @include breakpoint(phone) {
         display: none;
       }
     }
@@ -70,7 +70,7 @@ nav {
       padding-top: 7px;
       display: none;
   
-      @include breakpoint(xs) {
+      @include breakpoint(phone) {
         display: flex;
       }
   
